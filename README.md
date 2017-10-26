@@ -13,4 +13,5 @@ run `node usaCitiesJSON.js`
 ##### .data/cityObj.js is the JSON of the entire file
 ##### .data/smallcityObj.js is a subset of cityObj.js and array-ified
 ##### .data/testObj.js is a subset of cityObj.js
+##### for better readability, you can rename the output write file with no '.js' extension to get a more human readable file. You can still have a `const cities = [objects]` and `module.exports= {cities}` in the no extension file and everything should still run okay.
 ##### cityimporter.js is empty, I wanted to make a file that would automatically turn the JSON into an array of objects. To be done later.
