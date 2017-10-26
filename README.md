@@ -8,6 +8,7 @@
 #### Make sure that there is an empty line at the end of the readfile otherwise you get an empty array at the end of the JSON
 
 run `node usaCitiesJSON.js`
+#### after you run the file, you have to go into your file and manually define it and put array brackets on both sides. cityimporter.js will hopefully do this automatically.
 
 ##### .data/cityObj.js is the JSON of the entire file
 ##### .data/smallcityObj.js is a subset of cityObj.js and array-ified
