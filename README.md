@@ -9,19 +9,15 @@
 
 run `node usaCitiesJSON.js`  
 
-`node usaCitiesJSON.js'  
+`node usaCitiesJSON.js`  
 
 ## can optionally take 2 extra arguments in the command line. 
 
-
 `node usaCitiesJSON.js readfile writefile`
-
 
 ### You will take readfile and then turn it into writefile. 
 
-
 `node usaCitiesJSON.js readfile`  
-
 
 ## Alternatively, this will take readfile and then write it in './data/testObj'. 
 
