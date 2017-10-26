@@ -7,8 +7,25 @@
 #### Line 23's writefile is the output JSON file name that you want to make
 #### Make sure that there is an empty line at the end of the readfile otherwise you get an empty array at the end of the JSON
 
-run `node usaCitiesJSON.js`
-## `node usaCitiesJSON.js` can optionally take 2 extra arguments in the command line. if you run `node usaCitiesJSON.js readfile writefile` you will take readfile and then turn it into writefile. Alternatively you can run `node usaCitiesJSON.js readfile` which will take readfile and then write it in './data/testObj'. Default readfile and writefile is './data/usaCitiesSmall.txt' and './data/testObj' respectively.
+run `node usaCitiesJSON.js`  
+
+`node usaCitiesJSON.js'  
+
+## can optionally take 2 extra arguments in the command line. 
+
+
+`node usaCitiesJSON.js readfile writefile`
+
+
+### You will take readfile and then turn it into writefile. 
+
+
+`node usaCitiesJSON.js readfile` 
+
+
+## Alternatively, this will take readfile and then write it in './data/testObj'. 
+
+## Default readfile is './data/usaCitiesSmall.txt' and writefile is'./data/testObj' respectively.
 
 #### after you run the file, you have to go into your file and manually define it and put array brackets on both sides. cityimporter.js will hopefully do this automatically.
 
