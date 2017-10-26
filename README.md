@@ -1,6 +1,6 @@
 # usaCitiesJSON
 
-## So this repo is to turn the usa115475_cities.txt into a JSON that you can use for whatever you want.
+## So this repo turns the usa115475_cities.txt /portions of that file into a JSON that you can use for whatever you want.
 
 ### You may need to change your routes in usaCitiesJSON.js
 #### Line 3's readfile is the file that you want to be copying
