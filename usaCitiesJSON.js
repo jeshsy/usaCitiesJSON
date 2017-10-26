@@ -1,6 +1,18 @@
 const fs = require('fs');
+let readfile, writefile;
+if(process.argv.length === 4) {
+  readfile = process.argv[2];
+  writefile = process.argv[3];
+} else if (process.argv.length === 3) {
+  readfile = process.argv[2];
+  writefile = './data/testObj';
+} else {
+  readfile = './data/usaCitiesSmall.txt';
+  writefile = './data/testObj';
+} 
 
-fs.readFile('./data/usaCitiesSmall.txt', 'utf8', function(err, data) {  
+
+fs.readFile(readfile, 'utf8', function(err, data) {  
     if (err) throw err;
     const arr = [];
     let ys = /   /g;
@@ -20,7 +32,7 @@ fs.readFile('./data/usaCitiesSmall.txt', 'utf8', function(err, data) {
     // console.log(Cities);
     console.log(arr);
     // console.log(data);
-    fs.writeFile("./data/testObj.js", Array.of(arr), 'utf8', function (err) {
+    fs.writeFile(writefile, Array.of(arr), 'utf8', function (err) {
     if (err) {
         return console.log(err);
     }
@@ -30,3 +42,4 @@ fs.readFile('./data/usaCitiesSmall.txt', 'utf8', function(err, data) {
 
 // console.log(Cities);
 // console.log(arr);
+
