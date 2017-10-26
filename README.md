@@ -8,10 +8,12 @@
 #### Make sure that there is an empty line at the end of the readfile otherwise you get an empty array at the end of the JSON
 
 run `node usaCitiesJSON.js`
+## `node usaCitiesJSON.js` can optionally take 2 extra arguments in the command line. if you run `node usaCitiesJSON.js readfile writefile` you will take readfile and then turn it into writefile. Alternatively you can run `node usaCitiesJSON.js readfile` which will take readfile and then write it in './data/testObj'. Default readfile and writefile is './data/usaCitiesSmall.txt' and './data/testObj' respectively.
+
 #### after you run the file, you have to go into your file and manually define it and put array brackets on both sides. cityimporter.js will hopefully do this automatically.
 
-##### .data/cityObj.js is the JSON of the entire file
-##### .data/smallcityObj.js is a subset of cityObj.js and array-ified
-##### .data/testObj.js is a subset of cityObj.js
 ##### for better readability, you can rename the output write file with no '.js' extension to get a more human readable file. You can still have a `const cities = [objects]` and `module.exports= {cities}` in the no extension file and everything should still run okay.
+##### .data/cityObj is the JSON of the entire file
+##### .data/smallcityObj is a subset of cityObj.js and array-ified
+##### .data/testObj is a subset of cityObj.js
 ##### cityimporter.js is empty, I wanted to make a file that would automatically turn the JSON into an array of objects. To be done later.
