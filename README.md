@@ -20,7 +20,7 @@ run `node usaCitiesJSON.js`
 ### You will take readfile and then turn it into writefile. 
 
 
-`node usaCitiesJSON.js readfile` 
+`node usaCitiesJSON.js readfile`  
 
 
 ## Alternatively, this will take readfile and then write it in './data/testObj'. 
