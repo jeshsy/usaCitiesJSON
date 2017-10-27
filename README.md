@@ -8,7 +8,7 @@
 #### Make sure that there is an empty line at the end of the readfile otherwise you get an empty array at the end of the JSON
 
 1. run `node usaCitiesJSON.js`
-for Mac users run `node usaCitiesJSONmacOS.js` courtesy of @mixelpixel.
+for Mac users run `node usaCitiesJSONmacOS.js` courtesy of @mixelpixel. The following commands work for `usaCitiesJSONmacOS.js` as well.
 2. `node usaCitiesJSON.js`
 can optionally take 2 extra arguments in the command line. 
 3. `node usaCitiesJSON.js readfile writefile`
