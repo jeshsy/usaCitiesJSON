@@ -9,22 +9,26 @@ if(process.argv.length === 4) {
 } else {
   readfile = './data/usaCitiesSmall.txt';
   writefile = './data/testObj';
-} 
+}
 
 
-fs.readFile(readfile, 'utf8', function(err, data) {  
+fs.readFile(readfile, 'utf8', function(err, data) {
     if (err) throw err;
     const arr = [];
     let ys = /   /g;
     let xs =/ /;
     let name = / \| /;
-    let closebracket = /\r/;
+    // let closebracket = /\r/;
+    let closebracket = /\n/g;
+    // console.log(data);
+    data = data.replace(closebracket, '"}\r');
     data = data.replace(ys, '","y":"');
-    data = data.split('\n');
+    data = data.split('\r');
+    // data = data.split('}');
     for (let i = 0; i < data.length - 1; i++) {
       data[i] = data[i].replace(xs, '{"x":"');
       data[i] = data[i].replace(name, '","name":"');
-      data[i] = data[i].replace(closebracket, '"}');
+      // data[i] = data[i].replace(closebracket, '"}');
       arr.push(data[i]);
       // let obj = JSON.parse(data[i]);
       // arr.push(obj);
@@ -37,9 +41,8 @@ fs.readFile(readfile, 'utf8', function(err, data) {
         return console.log(err);
     }
     console.log("The file was saved!");
-  }); 
+  });
 });
 
 // console.log(Cities);
 // console.log(arr);
-
