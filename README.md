@@ -8,6 +8,7 @@
 #### Make sure that there is an empty line at the end of the readfile otherwise you get an empty array at the end of the JSON
 
 1. run `node usaCitiesJSON.js`
+for Mac users run `node usaCitiesJSONmacOS.js` courtesy of @mixelpixel.
 2. `node usaCitiesJSON.js`
 can optionally take 2 extra arguments in the command line. 
 3. `node usaCitiesJSON.js readfile writefile`
@@ -22,4 +23,5 @@ This will take readfile and then write it in './data/testObj'.
 ##### .data/cityObj is the JSON of the entire file
 ##### .data/smallcityObj is a subset of cityObj.js and array-ified
 ##### .data/testObj is a subset of cityObj.js
+##### ./usaCitiesDump.js courtery of @WizrdJim does everything for you without making any output file. So you can theoretically import from this file and get it to work. I have not tested but @WizrdJim says it works.
 ##### cityimporter.js is empty, I wanted to make a file that would automatically turn the JSON into an array of objects. To be done later.
